@@ -1,0 +1,46 @@
+ .calc-header {
+     font-family: Open Sans;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 72px;
+     line-height: 79px;
+     color: #373A3C;
+     margin-top: 100px;
+ }
+
+ .calc-row {
+
+     font-family: Open Sans;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 24px;
+     line-height: 24px;
+     color: #373A3C;
+ }
+
+
+ .input-field {
+     margin-left: 14px;
+     width: 86px;
+     height: 38px;
+     background: #FFFFFF;
+     border: 1px solid #CCCCCC;
+     box-sizing: border-box;
+     border-radius: 4px;
+ }
+
+ .buttonIs {
+     width: 39px;
+     height: 38px;
+     margin-left: 14px;
+     background: #0275D8;
+     border: 1px solid #0275D8;
+     box-sizing: border-box;
+     border-radius: 4px;
+     color: white;
+ }
+
+ .result-style {
+     text-decoration: underline;
+     margin-left: 5px;
+ }
