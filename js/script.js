@@ -63,7 +63,11 @@
 
 // };
 
-// Milestone 5
+
+// ************************************************************************************
+
+// Milestone 5-6
+// 
 
 function fibonacciValue() {
     const inputValue = parseInt(document.getElementById("inputX").value);
@@ -96,7 +100,8 @@ function fibonacciValue() {
     }
 }
 const button = document.getElementById("button");
-button.addEventListener("click", fibonacciValue)
+button.addEventListener("click", fibonacciValue);
+// button.addEventListener("click", fibonacciResults);
 
 
 
@@ -115,3 +120,23 @@ function clearResult() {
     document.getElementById("inputX").style.border = "1px solid black";
     document.getElementById("resultY").classList.remove("error-result");
 }
+
+// *************************************************************************
+
+// Milestone 7
+
+function fibonacciResults() {
+    // loaderOn();
+    fetch("http://localhost:5050/getFibonacciResults")
+        .then(response => {
+            return response.json();
+        })
+        .then(data => {
+            console.log(data);
+        })
+    let getResult = JSON.stringify(data)
+    document.getElementById("results").innerHTML = getResult;
+};
+
+
+button.addEventListener("click", fibonacciResults);
