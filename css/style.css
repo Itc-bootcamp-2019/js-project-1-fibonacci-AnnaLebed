@@ -45,13 +45,15 @@
 
 .loader {
   position: absolute;
+  bottom: 0px;
   left: 380px;
   border: 5px solid #f3f3f3;
   border-radius: 50%;
   border-top: 5px solid black;
   width: 39px;
   height: 39px;
-  -webkit-animation: spin 2s linear infinite; /* Safari */
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
   animation: spin 2s linear infinite;
   visibility: hidden;
 }
@@ -80,11 +82,15 @@
   width: 180px;
   height: 33px;
   padding: 2px;
+  background: #F2DEDE;
+  border: 1px solid #EBCCCC;
+  border-radius: 4px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
+  color: #A94442;
   margin-top: 10px;
   margin-left: 110px;
   visibility: hidden;
@@ -109,6 +115,11 @@
   display: flex;
   align-items: flex-end;
   color: #373a3c;
+  padding-left: 0px;
+}
+
+.results-row {
+  margin-left: 190px;
 }
 
 .loader-results {
@@ -120,7 +131,83 @@
   border-top: 5px solid black;
   width: 39px;
   height: 39px;
-  -webkit-animation: spin 2s linear infinite; /* Safari */
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
   animation: spin 2s linear infinite;
+  visibility: hidden;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 50px;
+  display: flex;
+  align-items: flex-end;
+  color: #373A3C;
+  border-bottom: 1px solid black;
+  margin-left: 15px;
+
+}
+
+
+.s-calc-text {
+  font-size: 16px;
+  color: #373A3C;
+}
+
+.border-on {
+  border: 1px solid black;
+}
+
+.border-red {
+  border: 1px solid #d9534f;
+}
+
+
+.bold {
+  font-weight: bold;
+}
+
+.padding {
+  padding: 0px 5px 0px 5px;
+}
+
+.padding-left {
+  padding-left: 5px;
+}
+
+.margin {
+  margin-bottom: 50px;
+}
+
+.visibility-vis {
+  visibility: visible;
+}
+
+.visibility-hid {
   visibility: hidden;
 }

@@ -32,18 +32,25 @@
                     <input class="input-field" type="number" id="inputX" placeholder="#" />
                     <!-- <button class="buttonIs" onclick="getInputValue();">Is</button> -->
                     <button class="buttonIs" id="button">Is</button>
-                    <span class="result-style" id="resultY"></span><span class="loader" id="loadRing"></span>
+                    <span class="result-style" id="resultY"></span>
                 </div>
-            </div>
-            <div class="col-md-9 col-md-offset-3">
-                <div id="myalert" class="alert alert-danger custom-alert">Cant be larger than 50</div>
-            </div>
-            <div class="col-md-10 col-md-offset-2 results"> Results<span class="loader-results" id="loadRing"></span>
+                <div class="loader" id="loadRing"></div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-10 col-md-offset-2" id="results"> </div>
+        <div class="col-md-9 col-md-offset-3">
+            <div><input type="checkbox" id="myCheck"><span class="s-calc-text">Save Calculation</span></div>
+            <div id="myalert" class="alert custom-alert">Cant be larger than 50</div>
         </div>
+
+        <div class="col-md-10 col-md-offset-2 results"> Results<span class="loader-results" id="loadRingLower"></span>
+        </div>
+    </div>
+    <div class="row margin">
+        <div class="col-md-10 col-md-offset-2" id="results"> </div>
+    </div>
+    <div class="row results-row" id="resultsRow">
+
+    </div>
     </div>
 
     <script src="js/script.js">
